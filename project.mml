@@ -13,7 +13,7 @@
   "format": "png",
   "interactivity": false,
   "minzoom": 8,
-  "maxzoom": 12,
+  "maxzoom": 11,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "style.mss"
@@ -58,51 +58,6 @@
       "name": "waterway"
     },
     {
-      "geometry": "linestring",
-      "extent": [
-        7.467923128967748,
-        45.88571215480133,
-        18.32664132275453,
-        49.18499646988878
-      ],
-      "Datasource": {
-        "type": "postgis",
-        "table": "( SELECT *\n  FROM planet_osm_line\n  WHERE waterway IN ('canal', 'river', 'stream') \n    AND name IS NOT NULL\n) AS data",
-        "key_field": "",
-        "geometry_field": "",
-        "extent_cache": "auto",
-        "extent": "831325.4,5762053.39,2040112.38,6306309.92",
-        "dbname": "osm",
-        "id": "test",
-        "project": "water_test",
-        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
-      },
-      "id": "test",
-      "class": "",
-      "srs-name": "900913",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "advanced": {},
-      "name": "test"
-    },
-    {
-      "geometry": "polygon",
-      "extent": [
-        13.288455319948765,
-        47.54866958668834,
-        14.852037949206066,
-        48.51774219787706
-      ],
-      "id": "hwrisk-oo",
-      "class": "",
-      "Datasource": {
-        "file": "/Users/dasjo/Downloads/Hochwasser_Risikozonen/Hochwasser_Risikozonen.shp"
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "hwrisk-oo"
-    },
-    {
       "geometry": "polygon",
       "extent": [
         13.068519697634851,
@@ -131,17 +86,38 @@
       "id": "schlaglinien-oo",
       "class": "",
       "Datasource": {
-        "file": "https://e-gov.ooe.gv.at/at.gv.ooe.dorisdaten/Hochwasseranschlaglinien.zip"
+        "file": "https://e-gov.ooe.gv.at/at.gv.ooe.dorisdaten/Hochwasseranschlaglinien.zip",
+        "id": "schlaglinien-oo",
+        "project": "water_test",
+        "srs": ""
       },
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
       "name": "schlaglinien-oo"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        13.288455319948765,
+        47.54866958668834,
+        14.852037949206066,
+        48.51774219787706
+      ],
+      "id": "hwrisk-oo",
+      "class": "",
+      "Datasource": {
+        "file": "https://e-gov.ooe.gv.at/at.gv.ooe.dorisdaten/Hochwasser_Risikozonen.zip"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "hwrisk-oo"
     }
   ],
   "scale": 1,
   "metatile": 2,
-  "name": "Water test",
+  "name": "Austria Flood",
   "description": "",
   "attribution": ""
 }
