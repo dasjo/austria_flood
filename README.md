@@ -56,6 +56,11 @@ http://data.gv.at/suche/?search-term=hochwasser&formatTopFilter_shp=on&formatFil
 The projection of the flood shape files isn't matched exactly. This needs be fixed, because the overlays seems to be off about 30m at the moment.
 
 
+# Further reading
+
+* [New York 100-Year Flood Zones](http://project.wnyc.org/100yr-flood-ny)
+* [Anke Domscheit-Berg: Flutopfer sollen steuerfinanzierte Hochwasserkarten von Behörden kaufen? Danke, Frau Merkel!](http://ankedomscheitberg.de/?p=304)
+
 # Author
 
 Josef Dabernig (dasjo)
