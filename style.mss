@@ -1,5 +1,5 @@
 Map {
-  background-color: white;
+  background-color: #eeebeb;
 }
 
 #waterway {
