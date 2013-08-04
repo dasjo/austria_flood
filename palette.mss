@@ -38,7 +38,7 @@ Map { font-directory: url(./fonts); }
 /* ================================================================== */
 
 @lighten: 15%;
-@water:             #58a5e9;
+@water:             #1588ec;
 
 @land:              lighten(#FCFBE7, @lighten);
 @grass:             lighten(#E6F2C1, @lighten);
@@ -71,7 +71,7 @@ Map { font-directory: url(./fonts); }
  *         inner fill (inline).
  */
 
-@motorway_line:     lighten(#E65C5C, @lighten + 10%);
+@motorway_line:     lighten(#E65C5C, @lighten);
 @motorway_fill:     lighten(@motorway_line,10%);
 @motorway_case:     @motorway_line * 0.9;
 
@@ -119,33 +119,31 @@ Map { font-directory: url(./fonts); }
    at once or override each individually. */
 @place_halo:        fadeout(#fff,34%);
 
-@lighten-text: 20%;
-
-@country_text:      lighten(#435, @lighten-text);
+@country_text:      #435;
 @country_halo:      @place_halo;
 
-@state_text:        lighten(#546, @lighten-text);
+@state_text:        #546;
 @state_halo:        @place_halo;
 
-@city_text:         lighten(#444, @lighten-text);
+@city_text:         #444;
 @city_halo:         @place_halo;
 
-@town_text:         lighten(#666, @lighten-text);
+@town_text:         #666;
 @town_halo:         @place_halo;
 
-@poi_text:          lighten(#888, @lighten-text);
+@poi_text:          #888;
 
-@road_text:         lighten(#777, @lighten-text);
+@road_text:         #777;
 @road_halo:         #fff;
 
-@other_text:        lighten(#888, @lighten-text);
+@other_text:        #888;
 @other_halo:        @place_halo;
 
-@locality_text:     lighten(#aaa, @lighten-text);
+@locality_text:     #aaa;
 @locality_halo:     @land;
 
 /* Also used for other small places: hamlets, suburbs, localities */
-@village_text:      lighten(#888, @lighten-text);
+@village_text:      #888;
 @village_halo:      @place_halo;
 
 /* ****************************************************************** */
