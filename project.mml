@@ -670,5 +670,6 @@
   "metatile": 2,
   "name": "Austria Flood",
   "description": "https://github.com/dasjo/austria_flood",
-  "attribution": ""
+  "attribution": "",
+  "legend": "HW100 Hochwasser Risikozonen (Blaue, Gelbe, GelbRote, Rote)<br/>\nHW30 Hochwasserüberflutungsflächen: leicht orange"
 }
