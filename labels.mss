@@ -21,7 +21,7 @@
   text-placement:point;
   text-fill:@country_text;
   text-halo-fill: @country_halo;
-  text-halo-radius: 1;
+  text-halo-radius: 2;
   [zoom=3] {
     text-size:10 + @text_adjust;
     text-wrap-width: 40;
@@ -56,7 +56,7 @@
   text-placement:point;
   text-fill:@state_text;
   text-halo-fill: @state_halo;
-  text-halo-radius: 1;
+  text-halo-radius: 2;
   [zoom=6] {
     text-size:10 + @text_adjust;
     text-wrap-width: 40;
@@ -96,7 +96,7 @@
   text-halo-radius:2;
   [zoom<=8] {
     text-size: 10;
-    text-halo-radius:1;
+    text-halo-radius:2;
   }
   [zoom=9] {
     text-size:10;
@@ -145,7 +145,7 @@
   text-fill:@town_text;
   text-size:9;
   text-halo-fill:@town_halo;
-  text-halo-radius:1;
+  text-halo-radius:2;
   text-wrap-width: 50;
   [zoom>=10] {
     text-halo-radius:2;
@@ -195,7 +195,7 @@
   text-fill:@other_text;
   text-size:10;
   text-halo-fill:@other_halo;
-  text-halo-radius:1;
+  text-halo-radius:2;
   text-wrap-width: 30;
   [zoom>=14] {
     text-size:11;
@@ -236,7 +236,7 @@
   text-fill:@locality_text;
   text-size:9;
   text-halo-fill:@locality_halo;
-  text-halo-radius:1;
+  text-halo-radius:2;
   text-wrap-width: 30;
   [zoom>=16] {
     text-size:10;

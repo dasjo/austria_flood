@@ -36,6 +36,7 @@ Map {
   line-color:#e9a;
   line-width:0.5;
   line-opacity: 0.6;
+    line-width:1;
   [Art='Blaue Zone'] {
     polygon-fill:blue;
   }
@@ -48,10 +49,13 @@ Map {
   [Art='Rote Zone'] {
     polygon-fill:red;
   }
+
+
+  [zoom>=12] {
+    line-width:1;
+  }
 }
-#hwrisk-oo[zoom>=12] {
-  line-width:1;
-}
+#hwrisk-oo
 
 
 
