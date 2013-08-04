@@ -21,7 +21,7 @@ By using TileMill, the available shape files on flooding are visualized on a map
 
 Visualizes all rivers in austria + the available flooding data of Upper Austria.
 
-http://a.tiles.mapbox.com/v3/dasjo.austria_flood.html
+**Demo:** http://a.tiles.mapbox.com/v3/dasjo.austria_flood.html
 
 ## Austria Flood 2.0 OSM Bright
 
@@ -34,7 +34,7 @@ according to their definition in blue (Blaue Zone), yellow (Gelbe Zone), orange 
 Flooding areas (Hochwasserüberflutungsflächen) are restricted to those of a prediction for 30 years (HW30) and tooltips
 are provided for those.
 
-http://a.tiles.mapbox.com/v3/dasjo.austria_flood2.html
+**Demo:** http://a.tiles.mapbox.com/v3/dasjo.austria_flood2.html
 
 
 # Setup
