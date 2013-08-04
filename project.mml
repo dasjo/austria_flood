@@ -285,7 +285,10 @@
       "id": "floodarea-oo",
       "class": "",
       "Datasource": {
-        "file": "https://e-gov.ooe.gv.at/at.gv.ooe.dorisdaten/Hochwasserueberflutungsflaechen.zip"
+        "file": "https://e-gov.ooe.gv.at/at.gv.ooe.dorisdaten/Hochwasserueberflutungsflaechen.zip",
+        "id": "floodarea-oo",
+        "project": "austria_flood",
+        "srs": ""
       },
       "srs-name": "custom",
       "srs": "",
@@ -305,7 +308,7 @@
       "Datasource": {
         "file": "https://e-gov.ooe.gv.at/at.gv.ooe.dorisdaten/Hochwasseranschlaglinien.zip",
         "id": "schlaglinien-oo",
-        "project": "water_test",
+        "project": "austria_flood",
         "srs": ""
       },
       "srs-name": "autodetect",
@@ -324,7 +327,10 @@
       "id": "hwrisk-oo",
       "class": "",
       "Datasource": {
-        "file": "https://e-gov.ooe.gv.at/at.gv.ooe.dorisdaten/Hochwasser_Risikozonen.zip"
+        "file": "https://e-gov.ooe.gv.at/at.gv.ooe.dorisdaten/Hochwasser_Risikozonen.zip",
+        "id": "hwrisk-oo",
+        "project": "austria_flood",
+        "srs": ""
       },
       "srs-name": "autodetect",
       "srs": "",
@@ -378,17 +384,17 @@
         "geometry_field": "way",
         "id": "admin",
         "key_field": "",
-        "project": "osm-bright-imposm",
+        "project": "austria_flood",
         "table": "( SELECT way, admin_level\n  FROM planet_osm_line\n  WHERE boundary = 'administrative'\n    AND admin_level IN ('2','3','4')\n) AS data",
-        "type": "postgis"
+        "type": "postgis",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
       },
       "class": "",
       "geometry": "linestring",
       "id": "admin",
       "name": "admin",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "srs-name": "900913",
-      "status": "off"
+      "srs-name": "900913"
     },
     {
       "Datasource": {
