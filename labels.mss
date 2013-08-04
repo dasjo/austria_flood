@@ -262,13 +262,13 @@
 
 #area_label {
   // Bring in labels gradually as one zooms in, bases on polygon area
-  [zoom>=11][area>102400000],
-  [zoom>=12][area>25600000],
-  [zoom>=13][area>1600000],
-  [zoom>=14][area>320000],
-  [zoom>=15][area>80000],
-  [zoom>=16][area>20000],
-  [zoom>=17][area>5000],
+  [zoom>=12][area>102400000],
+  [zoom>=13][area>25600000],
+  [zoom>=14][area>1600000],
+  [zoom>=15][area>320000],
+  [zoom>=16][area>80000],
+  [zoom>=17][area>20000],
+  [zoom>=18][area>5000],
   [zoom>=18][area>=0] {
     text-name: "[name]";
     text-halo-radius: 1.5;
@@ -386,6 +386,7 @@
   shield-face-name: @sans_bold;
   shield-fill: #fff;
   shield-file: url(img/shield-motorway-1.png);
+  shield-opacity: 0.5;
   [type='motorway'] {
     [reflen=1] { shield-file: url(img/shield-motorway-1.png); }
     [reflen=2] { shield-file: url(img/shield-motorway-2.png); }
