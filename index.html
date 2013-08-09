@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Austria flood : A tilemill project to visualize open flood data in Austria" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Austria flood</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/dasjo/austria_flood">View on GitHub</a>
+
+          <h1 id="project_title">Austria flood</h1>
+          <h2 id="project_tagline">A tilemill project to visualize open flood data in Austria</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/dasjo/austria_flood/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/dasjo/austria_flood/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="intro" class="anchor" href="#intro"><span class="octicon octicon-link"></span></a>Intro</h1>
+
+<p>This is mainly a playground to explore different ways on how to represent areal, open data that we
+currently can get on floodings in Austria. At the time of developing this prototype (August 2013), very little open flood data is available.
+Upper Austria is the only one of nine states, that has published shape files as open data so far:</p>
+
+<p><a href="http://data.gv.at/suche/?search-term=hochwasser&amp;formatTopFilter_shp=on&amp;formatFilter_shp=on&amp;connection=and#showresults">http://data.gv.at/suche/?search-term=hochwasser&amp;formatTopFilter_shp=on&amp;formatFilter_shp=on&amp;connection=and#showresults</a></p>
+
+<h1>
+<a name="about" class="anchor" href="#about"><span class="octicon octicon-link"></span></a>About</h1>
+
+<p>By using TileMill, the available shape files on flooding are visualized on a map. Several iterations have been created:</p>
+
+<h2>
+<a name="austria-flood-10-minimalistic" class="anchor" href="#austria-flood-10-minimalistic"><span class="octicon octicon-link"></span></a>Austria Flood 1.0 Minimalistic</h2>
+
+<p>Visualizes all rivers in austria + the available flooding data of Upper Austria.</p>
+
+
+
+<h2>
+<a name="austria-flood-20-osm-bright" class="anchor" href="#austria-flood-20-osm-bright"><span class="octicon octicon-link"></span></a>Austria Flood 2.0 OSM Bright</h2>
+
+<p>Adds cities, woods, roads and other information based on the <a href="https://github.com/mapbox/osm-bright">OSM Bright</a> preset.</p>
+
+<p>The color scheme of OSM Bright has been lightened to focus on the flood data.</p>
+
+<p>In addition, the visualization of flood data has been tuned. Flood risk zones (Hochwasser Risikozonen) are colored
+according to their definition in blue (Blaue Zone), yellow (Gelbe Zone), orange (GelbRote Zone) and red (Rote Zone).
+Flooding areas (Hochwasserüberflutungsflächen) are restricted to those of a prediction for 30 years (HW30) and tooltips
+are provided for those.</p>
+
+
+
+<h1>
+<a name="setup" class="anchor" href="#setup"><span class="octicon octicon-link"></span></a>Setup</h1>
+
+<p>The provided source code can be used to replicate the setup for the above examples. Feel free to play around and fork!</p>
+
+<ul>
+<li>Install TileMill: <a href="http://www.mapbox.com/tilemill/">http://www.mapbox.com/tilemill/</a>
+</li>
+<li>Add Austria OSM using Postgis
+
+<ul>
+<li>Follow steps 1 + 2 from <a href="http://www.mapbox.com/tilemill/docs/guides/osm-bright-mac-quickstart/">http://www.mapbox.com/tilemill/docs/guides/osm-bright-mac-quickstart/</a>
+</li>
+<li>For step 2 use <a href="http://download.geofabrik.de/europe/austria-latest.osm.pbf">http://download.geofabrik.de/europe/austria-latest.osm.pbf</a>
+</li>
+</ul>
+</li>
+<li>git clone <a href="https://github.com/dasjo/austria_flood.git">https://github.com/dasjo/austria_flood.git</a> ~/Documents/MapBox/projects/austria_flood</li>
+</ul><p>The flood-related shape files are open data published as follows:
+<a href="http://data.gv.at/suche/?search-term=hochwasser&amp;formatTopFilter_shp=on&amp;formatFilter_shp=on&amp;connection=and#showresults">http://data.gv.at/suche/?search-term=hochwasser&amp;formatTopFilter_shp=on&amp;formatFilter_shp=on&amp;connection=and#showresults</a></p>
+
+<h1>
+<a name="open-issues" class="anchor" href="#open-issues"><span class="octicon octicon-link"></span></a>Open issues</h1>
+
+<p>The projection of the flood shape files isn't matched exactly. This needs be fixed, because the overlays seems to be off about 30m at the moment.</p>
+
+<h1>
+<a name="further-reading" class="anchor" href="#further-reading"><span class="octicon octicon-link"></span></a>Further reading</h1>
+
+<ul>
+<li><a href="http://project.wnyc.org/100yr-flood-ny">New York 100-Year Flood Zones</a></li>
+<li><a href="http://ankedomscheitberg.de/?p=304">Anke Domscheit-Berg: Flutopfer sollen steuerfinanzierte Hochwasserkarten von Behörden kaufen? Danke, Frau Merkel!</a></li>
+</ul><h1>
+<a name="author" class="anchor" href="#author"><span class="octicon octicon-link"></span></a>Author</h1>
+
+<p>Josef Dabernig (dasjo)</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Austria flood maintained by <a href="https://github.com/dasjo">dasjo</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
