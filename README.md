@@ -51,11 +51,6 @@ The flood-related shape files are open data published as follows:
 http://data.gv.at/suche/?search-term=hochwasser&formatTopFilter_shp=on&formatFilter_shp=on&connection=and#showresults
 
 
-# Open issues
-
-The projection of the flood shape files isn't matched exactly. This needs be fixed, because the overlays seems to be off about 30m at the moment.
-
-
 # Further reading
 
 * [New York 100-Year Flood Zones](http://project.wnyc.org/100yr-flood-ny)
